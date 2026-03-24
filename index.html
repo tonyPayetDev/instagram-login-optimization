@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Créez un compte ou connectez-vous à Instagram pour partager ce que vous aimez avec vos proches. Accédez à vos photos, vidéos et plus encore.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Connectez-vous à Instagram pour partager vos moments">
+  <meta property="og:description" content="Créez un compte ou connectez-vous à Instagram pour partager ce que vous aimez avec vos proches.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0064E0">
+
+  <title>Connectez-vous à Instagram pour partager vos moments</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Favicon inline SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='url(%23g)'/><defs><linearGradient id='g' x1='0%25' y1='100%25' x2='100%25' y2='0%25'><stop offset='0%25' stop-color='%23F09433'/><stop offset='25%25' stop-color='%23E6683C'/><stop offset='50%25' stop-color='%23DC2743'/><stop offset='75%25' stop-color='%23CC2366'/><stop offset='100%25' stop-color='%23BC1888'/></linearGradient></defs><circle cx='50' cy='50' r='22' fill='none' stroke='white' stroke-width='7'/><circle cx='72' cy='28' r='5' fill='white'/></svg>" type="image/svg+xml">
+</head>
+<body>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Navigation principale">
+      <div class="navbar-inner">
+        <!-- Logo -->
+        <a href="#" class="navbar-logo" aria-label="Instagram">
+          <svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="100" height="100" rx="22" fill="url(#navGrad)"/>
+            <defs>
+              <linearGradient id="navGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#F09433"/>
+                <stop offset="25%" stop-color="#E6683C"/>
+                <stop offset="50%" stop-color="#DC2743"/>
+                <stop offset="75%" stop-color="#CC2366"/>
+                <stop offset="100%" stop-color="#BC1888"/>
+              </linearGradient>
+            </defs>
+            <circle cx="50" cy="50" r="22" fill="none" stroke="white" stroke-width="7"/>
+            <circle cx="72" cy="28" r="5" fill="white"/>
+          </svg>
+          Instagram
+        </a>
+
+        <!-- Actions -->
+        <div class="navbar-actions">
+          <button class="btn-outline" data-cta="nav_inscription" onclick="document.getElementById('inscription').scrollIntoView({behavior:'smooth'})">
+            Créer un compte
+          </button>
+          <button class="btn-primary" data-cta="nav_connexion" onclick="document.getElementById('connexion').scrollIntoView({behavior:'smooth'})">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2h-4"/>
+              <polyline points="10 17 15 12 10 7"/>
+              <line x1="15" y1="12" x2="3" y2="12"/>
+            </svg>
+            Se connecter
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============================================
+         HERO
+         ============================================ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <h1 id="hero-title">
+            Connectez-vous à Instagram pour <span>partager vos moments</span>
+          </h1>
+          <p>
+            Créez un compte ou connectez-vous à Instagram pour partager ce que vous aimez avec vos proches. Accédez à vos photos, vidéos et plus encore.
+          </p>
+          <div class="hero-cta">
+            <button class="btn-hero-primary" data-cta="hero_connexion" onclick="document.getElementById('connexion').scrollIntoView({behavior:'smooth'})">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2h-4"/>
+                <polyline points="10 17 15 12 10 7"/>
+                <line x1="15" y1="12" x2="3" y2="12"/>
+              </svg>
+              Se connecter
+            </button>
+            <button class="btn-hero-secondary" data-cta="hero_inscription" onclick="document.getElementById('inscription').scrollIntoView({behavior:'smooth'})">
+              Créer un compte
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <!-- Phone mockup -->
+          <div class="phone-mockup">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <!-- Instagram logo in phone -->
+              <div class="phone-instagram-logo">
+                <svg width="120" height="36" viewBox="0 0 120 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <text x="0" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="28" font-weight="800" fill="#262626" letter-spacing="-1">Instagram</text>
+                </svg>
+              </div>
+              <div class="phone-input-mock">Numéro, email ou nom d'utilisateur</div>
+              <div class="phone-input-mock">Mot de passe</div>
+              <div class="phone-btn-mock">Se connecter</div>
+              <div class="phone-divider">
+                <div class="phone-divider-line"></div>
+                <span class="phone-divider-text">OU</span>
+                <div class="phone-divider-line"></div>
+              </div>
+              <div class="phone-btn-fb">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                Se connecter avec Facebook
+              </div>
+              <span class="phone-link">Mot de passe oublié ?</span>
+            </div>
+          </div>
+
+          <!-- Floating badges -->
+          <div class="floating-badge badge-1">
+            <div class="badge-icon blue">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0064E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 00-3-3.87"/>
+                <path d="M16 3.13a4 4 0 010 7.75"/>
+              </svg>
+            </div>
+            <div>
+              <div style="font-size:13px;font-weight:700;color:#1C1E21">2 milliards</div>
+              <div style="font-size:11px;color:#8A8D91">d'utilisateurs actifs</div>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-2">
+            <div class="badge-icon green">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#31A73B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </div>
+            <div>
+              <div style="font-size:13px;font-weight:700;color:#1C1E21">Connexion sécurisée</div>
+              <div style="font-size:11px;color:#8A8D91">Données protégées</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 1 - CONNEXION À INSTAGRAM
+         ============================================ -->
+    <section id="connexion" class="section-login" aria-labelledby="login-title">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Connexion</span>
+          <h2 id="login-title">Connexion à Instagram</h2>
+          <p>Utilisez votre numéro de mobile, nom d'utilisateur ou email pour vous connecter à Instagram et accéder à votre compte.</p>
+        </div>
+
+        <div class="login-grid">
+          <!-- Formulaire de connexion -->
+          <div class="fade-in">
+            <form class="login-form-card" id="loginForm" novalidate>
+              <h3>Bienvenue</h3>
+              <p>Connectez-vous pour retrouver vos photos, vidéos et vos amis.</p>
+
+              <div class="form-group">
+                <label for="identifier">Numéro, email ou nom d'utilisateur</label>
+                <input
+                  type="text"
+                  id="identifier"
+                  name="identifier"
+                  class="form-input"
+                  placeholder="Entrez votre identifiant"
+                  autocomplete="username"
+                  required
+                  aria-describedby="identifier-hint"
+                >
+              </div>
+
+              <div class="form-group" style="position:relative">
+                <label for="password">Mot de passe</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  class="form-input"
+                  placeholder="Entrez votre mot de passe"
+                  autocomplete="current-password"
+                  required
+                  style="padding-right: 48px;"
+                >
+                <button
+                  type="button"
+                  id="togglePassword"
+                  aria-label="Afficher ou masquer le mot de passe"
+                  style="position:absolute;right:14px;top:36px;background:none;border:none;cursor:pointer;padding:0;color:#8A8D91;"
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                    <circle cx="12" cy="12" r="3"/>
+                  </svg>
+                </button>
+              </div>
+
+              <button type="submit" class="btn-full" data-cta="form_connexion">
+                Se connecter
+              </button>
+
+              <div class="form-divider">
+                <div class="form-divider-line"></div>
+                <span class="form-divider-text">ou</span>
+                <div class="form-divider-line"></div>
+              </div>
+
+              <button type="button" class="btn-facebook" data-cta="form_facebook" onclick="document.getElementById('facebook').scrollIntoView({behavior:'smooth'})">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+                Se connecter avec Facebook
+              </button>
+
+              <p style="text-align:center;margin-top:16px;font-size:14px;color:#8A8D91">
+                <a href="#mot-de-passe" style="color:#0064E0;font-weight:600;" onclick="event.preventDefault();document.getElementById('mot-de-passe').scrollIntoView({behavior:'smooth'})">Mot de passe oublié ?</a>
+              </p>
+            </form>
+          </div>
+
+          <!-- Bénéfices -->
+          <div class="login-benefits fade-in">
+            <div class="benefit-item">
+              <div class="benefit-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0064E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+                </svg>
+              </div>
+              <div class="benefit-text">
+                <h4>Partagez vos photos et vidéos</h4>
+                <p>Publiez et partagez vos meilleurs moments avec vos amis et votre famille.</p>
+              </div>
+            </div>
+
+            <div class="benefit-item">
+              <div class="benefit-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0064E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                </svg>
+              </div>
+              <div class="benefit-text">
+                <h4>Suivez vos passions</h4>
+                <p>Découvrez des contenus qui vous inspirent et suivez les créateurs que vous aimez.</p>
+              </div>
+            </div>
+
+            <div class="benefit-item">
+              <div class="benefit-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0064E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+                </svg>
+              </div>
+              <div class="benefit-text">
+                <h4>Restez connecté</h4>
+                <p>Échangez avec vos proches grâce aux messages directs et aux stories.</p>
+              </div>
+            </div>
+
+            <div class="benefit-item">
+              <div class="benefit-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0064E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/>
+                </svg>
+              </div>
+              <div class="benefit-text">
+                <h4>Accédez où que vous soyez</h4>
+                <p>Votre compte vous suit partout, sur mobile, tablette ou ordinateur.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 2 - MOT DE PASSE OUBLIÉ
+         ============================================ -->
+    <section id="mot-de-passe" class="section-password" aria-labelledby="password-title">
+      <div class="container">
+        <div class="password-card fade-in">
+          <div class="password-content">
+            <span class="section-tag">Récupération</span>
+            <h3 id="password-title">Mot de passe oublié</h3>
+            <p>Vous avez oublié votre mot de passe ? Réinitialisez-le facilement pour retrouver l'accès à votre compte en quelques étapes simples.</p>
+
+            <div class="steps-list">
+              <div class="step-item">
+                <div class="step-number" aria-hidden="true">1</div>
+                <span class="step-text">Entrez votre adresse email ou numéro de téléphone associé à votre compte</span>
+              </div>
+              <div class="step-item">
+                <div class="step-number" aria-hidden="true">2</div>
+                <span class="step-text">Recevez un lien ou un code de vérification sécurisé</span>
+              </div>
+              <div class="step-item">
+                <div class="step-number" aria-hidden="true">3</div>
+                <span class="step-text">Créez un nouveau mot de passe fort et sécurisé</span>
+              </div>
+              <div class="step-item">
+                <div class="step-number" aria-hidden="true">4</div>
+                <span class="step-text">Reconnectez-vous et retrouvez votre compte</span>
+              </div>
+            </div>
+
+            <button class="btn-reset" data-cta="reset_password">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0110 0v4"/>
+              </svg>
+              Réinitialiser le mot de passe
+            </button>
+          </div>
+
+          <div class="password-illustration" aria-hidden="true">
+            <div class="lock-visual">
+              <svg width="90" height="90" viewBox="0 0 24 24" fill="none" stroke="#0064E0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0110 0v4"/>
+                <circle cx="12" cy="16" r="1.5" fill="#0064E0" stroke="none"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 3 - CRÉER UN NOUVEAU COMPTE
+         ============================================ -->
+    <section id="inscription" class="section-register" aria-labelledby="register-title">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Inscription</span>
+          <h2 id="register-title">Créer un nouveau compte</h2>
+          <p>Nouveau sur Instagram ? Créez un compte pour commencer à partager vos photos et vidéos avec vos amis.</p>
+        </div>
+
+        <div class="register-grid">
+          <div class="register-features fade-in">
+            <div class="feature-card">
+              <div class="feature-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0064E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+                </svg>
+              </div>
+              <h4>Photos & Vidéos</h4>
+              <p>Partagez vos meilleurs clichés et créez des réels pour animer votre profil.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0064E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+                </svg>
+              </div>
+              <h4>Stories</h4>
+              <p>Publiez des stories éphémères visibles 24h par vos abonnés.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0064E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+                </svg>
+              </div>
+              <h4>Messages directs</h4>
+              <p>Chattez en privé avec vos amis et partagez du contenu facilement.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0064E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/>
+                </svg>
+              </div>
+              <h4>Communauté</h4>
+              <p>Rejoignez des millions de créateurs et découvrez de nouvelles inspirations.</p>
+            </div>
+          </div>
+
+          <div class="register-cta fade-in">
+            <h3>Rejoignez Instagram dès aujourd'hui</h3>
+            <p>Créez votre compte gratuitement en quelques secondes et commencez à partager vos meilleurs moments avec votre entourage.</p>
+
+            <ul style="list-style:none;margin-bottom:28px;display:flex;flex-direction:column;gap:10px;">
+              <li style="display:flex;align-items:center;gap:10px;font-size:15px;color:#444950;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#31A73B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Inscription gratuite et rapide
+              </li>
+              <li style="display:flex;align-items:center;gap:10px;font-size:15px;color:#444950;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#31A73B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Profil entièrement personnalisable
+              </li>
+              <li style="display:flex;align-items:center;gap:10px;font-size:15px;color:#444950;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#31A73B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Disponible sur iOS, Android et web
+              </li>
+              <li style="display:flex;align-items:center;gap:10px;font-size:15px;color:#444950;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#31A73B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Contrôle total de votre vie privée
+              </li>
+            </ul>
+
+            <button class="btn-register" data-cta="create_account">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/>
+              </svg>
+              Créer un compte
+            </button>
+
+            <p style="font-size:13px;color:#8A8D91;margin-top:16px;line-height:1.6;">
+              En créant un compte, vous acceptez nos
+              <a href="#ressources" style="color:#0064E0;" onclick="event.preventDefault();document.getElementById('ressources').scrollIntoView({behavior:'smooth'})">Conditions d'utilisation</a>
+              et notre
+              <a href="#ressources" style="color:#0064E0;" onclick="event.preventDefault();document.getElementById('ressources').scrollIntoView({behavior:'smooth'})">Politique de confidentialité</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 4 - CONNEXION AVEC FACEBOOK
+         ============================================ -->
+    <section id="facebook" class="section-facebook" aria-labelledby="facebook-title">
+      <div class="container">
+        <div class="facebook-inner">
+          <div class="facebook-content fade-in">
+            <span class="section-tag">Connexion rapide</span>
+            <h3 id="facebook-title">Connexion avec Facebook</h3>
+            <p>Connectez-vous rapidement avec votre compte Facebook pour accéder à Instagram sans créer un nouveau compte. Simple, rapide et sécurisé.</p>
+
+            <div class="facebook-advantages">
+              <div class="advantage-item">
+                <div class="advantage-check" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </div>
+                <span>Aucun nouveau mot de passe à retenir</span>
+              </div>
+              <div class="advantage-item">
+                <div class="advantage-check" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </div>
+                <span>Retrouvez vos amis Facebook sur Instagram</span>
+              </div>
+              <div class="advantage-item">
+                <div class="advantage-check" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </div>
+                <span>Connexion en un seul clic, sécurisée par Meta</span>
+              </div>
+              <div class="advantage-item">
+                <div class="advantage-check" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </div>
+                <span>Synchronisation facile entre les deux plateformes</span>
+              </div>
+            </div>
+
+            <button class="btn-fb-large" data-cta="facebook_signin">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+              Se connecter avec Facebook
+            </button>
+          </div>
+
+          <div class="facebook-visual fade-in" aria-hidden="true">
+            <div class="fb-connect-visual">
+              <div class="logos">
+                <div class="logo-circle ig">
+                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.5" fill="white" stroke="none"/>
+                  </svg>
+                </div>
+                <div class="connect-arrow">⟷</div>
+                <div class="logo-circle fb">
+                  <svg width="30" height="30" viewBox="0 0 24 24" fill="white">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  </svg>
+                </div>
+              </div>
+              <h4>Comptes liés</h4>
+              <p>Vos comptes Instagram et Facebook sont connectés grâce à Meta, pour une expérience unifiée.</p>
+
+              <div style="margin-top:24px;padding:14px;background:#F2F4F6;border-radius:8px;display:flex;align-items:center;gap:10px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#31A73B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+                <span style="font-size:13px;color:#444950;font-weight:600;">Connexion sécurisée par Meta</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 5 - RESSOURCES ET ASSISTANCE
+         ============================================ -->
+    <section id="ressources" class="section-resources" aria-labelledby="resources-title">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Assistance</span>
+          <h2 id="resources-title">Ressources et assistance</h2>
+          <p>Découvrez les pages d'aide, la politique de confidentialité, les conditions d'utilisation et plus encore pour mieux utiliser Instagram.</p>
+        </div>
+
+        <div class="resources-grid">
+          <div class="resource-card fade-in">
+            <div class="resource-card-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0064E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+              </svg>
+            </div>
+            <h4>Centre d'aide</h4>
+            <p>Trouvez des réponses à toutes vos questions sur l'utilisation d'Instagram, la gestion de votre compte et bien plus.</p>
+            <a href="#" class="resource-link" aria-label="Accéder au centre d'aide Instagram">
+              En savoir plus
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="resource-card fade-in">
+            <div class="resource-card-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0064E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h4>Politique de confidentialité</h4>
+            <p>Comprenez comment Instagram collecte, utilise et protège vos données personnelles conformément au RGPD.</p>
+            <a href="#" class="resource-link" aria-label="Lire la politique de confidentialité">
+              En savoir plus
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="resource-card fade-in">
+            <div class="resource-card-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0064E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/>
+              </svg>
+            </div>
+            <h4>Conditions d'utilisation</h4>
+            <p>Consultez les règles et conditions régissant l'utilisation d'Instagram et les droits des utilisateurs.</p>
+            <a href="#" class="resource-link" aria-label="Lire les conditions d'utilisation">
+              En savoir plus
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="resource-card fade-in">
+            <div class="resource-card-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0064E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/>
+              </svg>
+            </div>
+            <h4>Communauté &amp; Règles</h4>
+            <p>Découvrez les règles de la communauté Instagram pour un environnement sûr et respectueux pour tous.</p>
+            <a href="#" class="resource-link" aria-label="Voir les règles de la communauté">
+              En savoir plus
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="resource-card fade-in">
+            <div class="resource-card-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0064E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <h4>Instagram pour les entreprises</h4>
+            <p>Développez votre marque, créez des publicités et analysez vos performances avec les outils pros d'Instagram.</p>
+            <a href="#" class="resource-link" aria-label="Découvrir Instagram for Business">
+              En savoir plus
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="resource-card fade-in">
+            <div class="resource-card-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0064E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+              </svg>
+            </div>
+            <h4>Contacter le support</h4>
+            <p>Vous avez un problème technique ou une question ? Notre équipe d'assistance est disponible pour vous aider.</p>
+            <a href="#" class="resource-link" aria-label="Contacter le support Instagram">
+              En savoir plus
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- CTA Banner -->
+        <div class="resources-cta-banner fade-in">
+          <h3>Besoin d'aide supplémentaire ?</h3>
+          <p>Notre centre d'assistance complet répond à toutes vos questions sur Instagram, la sécurité de votre compte et bien plus encore.</p>
+          <button class="btn-white" data-cta="help_center">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0064E0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+            </svg>
+            En savoir plus
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3>
+            <svg width="28" height="28" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="100" height="100" rx="22" fill="url(#footerGrad)"/>
+              <defs>
+                <linearGradient id="footerGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#F09433"/>
+                  <stop offset="50%" stop-color="#DC2743"/>
+                  <stop offset="100%" stop-color="#BC1888"/>
+                </linearGradient>
+              </defs>
+              <circle cx="50" cy="50" r="22" fill="none" stroke="white" stroke-width="7"/>
+              <circle cx="72" cy="28" r="5" fill="white"/>
+            </svg>
+            Instagram
+          </h3>
+          <p>Partagez vos moments, connectez-vous avec vos proches et découvrez ce qui se passe dans le monde.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Compte</h4>
+          <ul>
+            <li><a href="#connexion" onclick="event.preventDefault();document.getElementById('connexion').scrollIntoView({behavior:'smooth'})">Se connecter</a></li>
+            <li><a href="#inscription" onclick="event.preventDefault();document.getElementById('inscription').scrollIntoView({behavior:'smooth'})">Créer un compte</a></li>
+            <li><a href="#mot-de-passe" onclick="event.preventDefault();document.getElementById('mot-de-passe').scrollIntoView({behavior:'smooth'})">Mot de passe oublié</a></li>
+            <li><a href="#facebook" onclick="event.preventDefault();document.getElementById('facebook').scrollIntoView({behavior:'smooth'})">Connexion Facebook</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Ressources</h4>
+          <ul>
+            <li><a href="#ressources">Centre d'aide</a></li>
+            <li><a href="#ressources">Blog</a></li>
+            <li><a href="#ressources">Pour les entreprises</a></li>
+            <li><a href="#ressources">Créateurs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Légal</h4>
+          <ul>
+            <li><a href="#ressources">Confidentialité</a></li>
+            <li><a href="#ressources">Conditions</a></li>
+            <li><a href="#ressources">Cookies</a></li>
+            <li><a href="#ressources">Règles</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Instagram de Meta. Tous droits réservés.</p>
+        <nav class="footer-legal" aria-label="Navigation légale">
+          <a href="#ressources">Confidentialité</a>
+          <a href="#ressources">Conditions</a>
+          <a href="#ressources">Accessibilité</a>
+          <a href="#ressources">Langue : Français</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
